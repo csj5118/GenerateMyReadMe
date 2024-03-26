@@ -15,6 +15,16 @@ const questions = [
     },
     {
         type : 'input',
+        name : 'Installation',
+        message : 'Provide installation instructions',
+    },
+    {
+        type : 'input',
+        name : 'Usage',
+        message : 'Provide usage information : ',
+    },
+    {
+        type : 'input',
         name : 'Tools',
         message : 'What tools and Packages did you have to use for this project? : '
     },
@@ -30,8 +40,14 @@ const questions = [
     },
     {
         type : 'input',
+        name : 'Contact',
+        message : 'Provide your links so people can reach out to you',
+    },
+    {
+        type : 'list',
         name : 'License',
-        message : 'List the License you choose to use for your ReadMe file'
+        message : 'Please choose the License you used for your ReadMe file',
+        choices : ['MIT', 'GNU General Public License v3.0', 'ISC', 'Microsoft Public License', 'Eclipse Public License', 'Creative Commons Zero 1.0 Universal'],
     },
 ];
 
