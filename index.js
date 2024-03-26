@@ -26,7 +26,12 @@ const questions = [
     {
         type : 'input',
         name : 'Credits',
-        Message : 'Please list anyone you wish to give credit to : '
+        message : 'Please list anyone you wish to give credit to : '
+    },
+    {
+        type : 'input',
+        name : 'License',
+        message : 'List the License you choose to use for your ReadMe file'
     },
 ];
 
