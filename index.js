@@ -52,10 +52,52 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(ReadMeGenrator, data, (err)=>
+    err ? console.error(err) : console.log ('ReadMe.md successfully generated')
+    );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((answers) =>{
+    const readmeContent = `
+    # ${answers.title}
+
+    ## Description
+    ${answers.description}
+
+
+    ## Installation 
+    ${answers.installation}
+
+
+    ## Usage
+    ${answers.usage}
+
+    ## tools
+    ${answers.tools}
+
+
+    ## links
+    ${answers.links}
+
+    ## credits
+    ${answers.credits}
+
+
+    ## License 
+    This ReadMe is using the ${answers.license} license
+
+
+
+    ## Contact
+    ${answers.contact}
+`;
+  
+    writeToFile('README.md', readmeContent);
+});
+}
 
 // Function call to initialize app
 init();
