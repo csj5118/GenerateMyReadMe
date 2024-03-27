@@ -1,32 +1,32 @@
 
-    # sample
+    # sample1withCaseSens
 
     ## Description
-    sample
+    sample1withCaseSens
 
 
     ## Installation 
-    undefined
+    sample1withCaseSens
 
 
     ## Usage
-    undefined
+    sample1withCaseSens
 
     ## tools
-    undefined
+    sample1withCaseSens
 
 
     ## links
-    undefined
+    sample1withCaseSens
 
     ## credits
-    undefined
+    sample1withCaseSens
 
 
     ## License 
-    This ReadMe is using the undefined license
+    This ReadMe is using the MIT license
 
 
 
     ## Contact
-    undefined
+    sample1withCaseSens

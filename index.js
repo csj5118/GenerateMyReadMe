@@ -5,12 +5,12 @@ const fs = require('fs');
 const questions = [
     {
         type : 'input',
-        name : 'title',
+        name : 'Title',
         message: 'What is the title of your Project?'
     },
     {
         type : 'input',
-        name : 'description',
+        name : 'Description',
         message : 'Provide a description of your project : '
     },
     {
@@ -62,37 +62,37 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((answers) =>{
     const readmeContent = `
-    # ${answers.title}
+    # ${answers.Title}
 
     ## Description
-    ${answers.description}
+    ${answers.Description}
 
 
     ## Installation 
-    ${answers.installation}
+    ${answers.Installation}
 
 
     ## Usage
-    ${answers.usage}
+    ${answers.Usage}
 
     ## tools
-    ${answers.tools}
+    ${answers.Tools}
 
 
     ## links
-    ${answers.links}
+    ${answers.Links}
 
     ## credits
-    ${answers.credits}
+    ${answers.Credits}
 
 
     ## License 
-    This ReadMe is using the ${answers.license} license
+    This ReadMe is using the ${answers.License} license
 
 
 
     ## Contact
-    ${answers.contact}
+    ${answers.Contact}
 `;
   
     writeToFile('README.md', readmeContent);
