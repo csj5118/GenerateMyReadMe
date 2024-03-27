@@ -95,7 +95,7 @@ function init() {
     ${answers.Contact}
 `;
   
-    writeToFile('README.md', readmeContent);
+    writeToFile('README1.md', readmeContent);
 });
 }
 
